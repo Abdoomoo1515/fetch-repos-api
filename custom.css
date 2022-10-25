@@ -1,0 +1,98 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  font-family: Tahoma , Arial;
+}
+.subDiv{
+  display: flex;
+}
+.d_flex{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px ;
+  background-color: #FFF;
+  
+}
+.d_flex:not(:last-child){
+  margin-bottom: 5px; 
+}
+.visit_link{
+  background-color: #2196F3;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.stars{
+  background-color: #9E9E9E;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  margin: 0 10px;
+  
+}
+.repos__container{
+  width: 800px;
+  background-color: #f6f6f6;
+  margin: auto;
+}
+.repos__container .get__repos{
+  padding: 20px;
+  display: flex;
+  background-color: #eee;
+}
+.repos__container .get__repos input{
+
+  width: 100%;
+  border: none;
+  padding: 15px 20px;
+  font-size: 20px;
+  height: 54px;
+  border-radius: 6px;
+
+}
+.repos__container .get__repos input:focus{
+  outline: 2px solid #2196F3;
+}
+.repos__container .get__repos .get__button{
+  width: 140px;
+  height: 54px;
+  margin-left: 10px;
+  background-color: #2196F3;
+  color: #fff;
+  line-height: 54px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.repos__container .get__repos .get__button:hover{
+
+  background-color: #2196f3d4;
+}
+.repos__container .show__data{
+
+  padding: 20px;
+  background-color: #e0e0e0;
+}
+@media screen and (max-width:868px){
+  .repos__container{
+    width: 580px;
+  }
+}
+@media screen and (max-width:565px){
+  .repos__container{
+    width: 395px;
+  }
+}
+@media screen and (max-width:280px){
+  .repos__container{
+    width: 160px;
+  }
+  .repos__container .get__repos input{
+    font-size: 18px;
+  }
+}
